@@ -1,21 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Css selectors</title>
-        <style>
-            h1::before{
-                content:url(https://media.tenor.com/bSn0RWU_-8IAAAAC/emoji-hello.gif);
-                text-align: center;
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Css selectors</title>
+                <style>
+                    h1::before{
+                        content:url(https://media.tenor.com/bSn0RWU_-8IAAAAC/emoji-hello.gif)
+                    }
+                    div{
+                        width:200px;
+                        height:200px;
+                        background:red;
+                        font-weight:bold;
+                        text-align:center;
+                        padding-top:100px;
+                    }
+                    span#a1{
+                        display: block;
+                        width:200px;
+                        height:200px;
+                        background:purple;
+                        font-weight:bold;
+                        text-align:center;
+                        padding-top:100px;
+                    
+                    }
+                    span.b1{
+                        display:block;
+                        width:200px;
+                        height:200px;
+                        background:yellow;
+                        font-weight:bold;
+                        text-align:center;
+                        padding-top:100px;
+                    }
+                    /*a[herf ="https//www.google.com"]
+                    {
+                        display: block;
+                        width:200px;
+                        height:200px;
+                        background:orange;
+                        font-weight:bold;
+                        text-align:center;
+                        padding-top:100px;
+                    }*/
+                    *{
+                        border:10px solid black;
+                        background-color: aqua;
+                        margin-left: 10px;
+                    }
+                    h1::brfor{
+                        content: url(https://media.tenor.com/O6nx7n1Do3AAAAAC/question-think.gif);
+                    }
+                    div#c1:hover{
+                        background-color: green;
+                        text-align: center;
+                    }
+                    div,span#a1,span#b1,div#c1{
+                        display: inline-block;
+                    }
+
+                    
+                    
+                </style>
+            </head>
+            <body>
+                <h1>hello Everyone</h1>
+                <div>THIS IS A RED BOX</div>
+                <span id="a1">this is purpule color box</span>
+                <span class="b1">this is yellow color box</span>
+                <h1>what you tink obout my website</h1>
+                <div id="c1">COLOR CHANGER BOX</div>
                 
-            }
 
-        </style>
-    </head>
-    <body>
-        <h1>hello Everyone</h1>
-
-    
-    </body>
+            
+            </body>
 </html>
